@@ -1,0 +1,79 @@
+/* estilos.css */
+
+/* General */
+body {
+  background-color: #e9ecef;
+  color: #212529;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-link.active {
+  color: #0d6efd !important;
+}
+
+/* Sidebar */
+#sidebar {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 350px;
+}
+
+@media (min-width: 992px) {
+  main.container {
+    display: flex;
+    gap: 2rem;
+  }
+  #sidebar {
+    position: sticky;
+    top: 6rem;
+    height: fit-content;
+    flex-shrink: 0;
+  }
+}
+
+/* Footer */
+footer {
+  letter-spacing: 0.5px;
+  font-size: 0.95rem;
+}
+
+/* Botón de búsqueda */
+.btn-outline-success {
+  border-color: #0d6efd;
+  color: #fff;
+  background-color: #0d6efd;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline-success:hover {
+  background-color: #0a58ca;
+  color: #fff;
+  border-color: #0a58ca;
+}
+
+.btn-outline-success:active, .btn-outline-success:focus:active {
+  background-color: #fff;
+  color: #0a58ca;
+  border-color: #0a58ca;
+}
+
+.search-highlight {
+  background: #cfe2ff;
+  color: #084298;
+  border-radius: 4px;
+  padding: 0 2px;
+  transition: background 0.2s;
+}
